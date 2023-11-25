@@ -6,7 +6,7 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/nathanfallet/i18n)]()
 [![codecov](https://codecov.io/gh/nathanfallet/i18n/graph/badge.svg?token=iIM9xwE4QT)](https://codecov.io/gh/nathanfallet/i18n)
 
-UseCase utils for all my libs.
+i18n implementations for kotlin multiplatform
 
 ## Installation
 
