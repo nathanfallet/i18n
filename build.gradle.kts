@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "me.nathanfallet.i18n"
-version = "1.0.0"
+version = "1.0.1"
 
 repositories {
     mavenCentral()
@@ -56,6 +56,9 @@ kotlin {
     }
 
     applyDefaultHierarchyTemplate()
+
+    val usecasesVersion = "1.4.0"
+
     sourceSets {
         all {
             languageSettings.apply {
@@ -64,7 +67,7 @@ kotlin {
         }
         val commonMain by getting {
             dependencies {
-                api("me.nathanfallet.usecases:usecases:1.3.1")
+                api("me.nathanfallet.usecases:usecases:$usecasesVersion")
             }
         }
         val jvmMain by getting {
