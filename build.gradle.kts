@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "me.nathanfallet.i18n"
-version = "1.0.1"
+version = "1.0.2"
 
 repositories {
     mavenCentral()
@@ -57,7 +57,7 @@ kotlin {
 
     applyDefaultHierarchyTemplate()
 
-    val usecasesVersion = "1.4.0"
+    val usecasesVersion = "1.4.1"
 
     sourceSets {
         all {
