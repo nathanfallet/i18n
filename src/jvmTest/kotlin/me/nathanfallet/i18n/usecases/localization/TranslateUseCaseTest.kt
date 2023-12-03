@@ -18,4 +18,10 @@ class TranslateUseCaseTest {
         assertEquals("Coucou tout le monde !", useCase(Locale.FRENCH, "hello_world"))
     }
 
+    @Test
+    fun testInvokeArgs() {
+        val useCase = TranslateUseCase()
+        assertEquals("Hello Nathan!", useCase(Locale.ENGLISH, "hello_arg", listOf("Nathan")))
+    }
+
 }
