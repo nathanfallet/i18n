@@ -26,7 +26,7 @@ actual class TranslateUseCase(
         return input3.takeUnless { it.isEmpty() }?.let {
             cache.computeIfAbsent(Pair(string, bundle.locale)) {
                 MessageFormat(string, bundle.locale)
-            }.format(it)
+            }.format(it.toTypedArray())
         } ?: string
     }
 
