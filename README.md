@@ -13,7 +13,7 @@ i18n implementations for kotlin multiplatform
 Add dependency to your `build.gradle` or `pom.xml`:
 
 ```groovy
-compile 'me.nathanfallet.i18n:i18n:1.0.6'
+compile 'me.nathanfallet.i18n:i18n:1.0.7'
 ```
 
 ```xml
@@ -21,7 +21,7 @@ compile 'me.nathanfallet.i18n:i18n:1.0.6'
 <dependency>
     <groupId>me.nathanfallet.i18n</groupId>
     <artifactId>i18n-jvm</artifactId>
-    <version>1.0.6</version>
+    <version>1.0.7</version>
 </dependency>
 ```
 
