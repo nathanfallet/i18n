@@ -10,10 +10,10 @@ i18n implementations for kotlin multiplatform
 
 ## Installation
 
-Add dependency to your `build.gradle` or `pom.xml`:
+Add dependency to your `build.gradle(.kts)` or `pom.xml`:
 
-```groovy
-compile 'me.nathanfallet.i18n:i18n:1.0.9'
+```kotlin
+api("me.nathanfallet.i18n:i18n:1.0.9")
 ```
 
 ```xml
