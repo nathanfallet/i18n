@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "me.nathanfallet.i18n"
-version = "1.0.9"
+version = "1.0.10"
 
 repositories {
     mavenCentral()
@@ -57,7 +57,7 @@ kotlin {
 
     applyDefaultHierarchyTemplate()
 
-    val usecasesVersion = "1.5.5"
+    val usecasesVersion = "1.5.6"
 
     sourceSets {
         all {
@@ -80,21 +80,13 @@ kotlin {
                 api("org.jetbrains.kotlin-wrappers:kotlin-js:1.0.0-pre.648")
             }
         }
-        val commonTest by getting {
+        val jvmTest by getting {
             dependencies {
                 implementation(kotlin("test"))
-                implementation("io.mockative:mockative:2.0.1")
+                implementation("io.mockk:mockk:1.13.8")
             }
         }
     }
-}
-
-dependencies {
-    configurations
-        .filter { it.name.startsWith("ksp") && it.name.contains("Test") }
-        .forEach {
-            add(it.name, "io.mockative:mockative-processor:2.0.1")
-        }
 }
 
 npmPublish {
